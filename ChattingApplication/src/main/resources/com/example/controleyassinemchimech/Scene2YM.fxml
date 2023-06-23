@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controleyassinemchimech.Scene2YMController">
+    <right>
+        <AnchorPane prefHeight="333.0" prefWidth="350.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="349.0">
+               <center>
+                  <ListView fx:id="testview" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="349.0" BorderPane.alignment="CENTER_RIGHT">
+                     <children>
+                        <TextField fx:id="MymsgID" prefHeight="25.0" prefWidth="234.0" />
+                        <Button mnemonicParsing="false" onAction="#onsubmit" prefHeight="25.0" prefWidth="49.0" text="Send" />
+                        <Button disable="true" mnemonicParsing="false" onAction="#handleFileUpload" prefHeight="25.0" prefWidth="67.0" text="Upload" />
+                     </children>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </children>
+        </AnchorPane>
+    </right>
+   <left>
+        <AnchorPane maxWidth="250.0" minWidth="-Infinity" prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" layoutX="52.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Host:" wrappingWidth="89.13671875" AnchorPane.bottomAnchor="239.7373046875" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="108.86328125" AnchorPane.topAnchor="142.9716796875">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="HostID" layoutX="48.0" layoutY="171.0" />
+                <Text fill="WHITE" layoutX="52.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port:" wrappingWidth="110.13671875" AnchorPane.bottomAnchor="170.7373046875" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="87.86328125" AnchorPane.topAnchor="211.9716796875">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="PortID" layoutX="48.0" layoutY="241.0" />
+                <ButtonBar layoutX="40.0" layoutY="306.0" prefHeight="28.0" prefWidth="151.0">
+               <buttons>
+                  <Button mnemonicParsing="false" onAction="#onconnect" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: #FF0000;" text="Connect to the Server" textFill="WHITE" />
+               </buttons></ButtonBar>
+            <Text fill="#eb0f0f" fontSmoothingType="LCD" layoutX="33.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" underline="true" wrappingWidth="82.138671875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="usernameLabel" alignment="CENTER" layoutX="120.0" layoutY="66.0" prefHeight="27.0" prefWidth="120.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+   </left>
+</BorderPane>

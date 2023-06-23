@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controleyassinemchimech.RegistrationController">
+   <right>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="37.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" wrappingWidth="61.13671875" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="201.86328125" AnchorPane.topAnchor="136.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#ff1313" layoutX="86.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Registration" underline="true" wrappingWidth="186.13671875" AnchorPane.bottomAnchor="352.0" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="77.86328125" AnchorPane.topAnchor="21.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="37.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="58.13671875" AnchorPane.bottomAnchor="171.98828125" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="204.86328125" AnchorPane.topAnchor="212.05078125">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernameField" layoutX="37.0" layoutY="163.0" prefHeight="25.0" prefWidth="276.0" />
+            <PasswordField fx:id="passwordField" layoutX="37.0" layoutY="236.0" prefHeight="25.0" prefWidth="275.0" />
+            <Button layoutX="39.0" layoutY="290.0" minHeight="30.0" minWidth="139.0" mnemonicParsing="false" onAction="#registerAccount" prefHeight="32.0" prefWidth="139.0" style="-fx-background-color: #FF0000;" text="Register" textFill="WHITE" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="290.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="59.0" fitWidth="84.0" layoutX="87.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" x="60.0" y="40.0" AnchorPane.bottomAnchor="278.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="63.0">
+               <image>
+                  <Image url="@../../../../../images/37-373951_login-logo-de-login.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Button layoutX="224.0" layoutY="289.0" minHeight="30.0" minWidth="90.0" mnemonicParsing="false" onAction="#oncancel" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #FF0000;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="40.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This window servers as a registration page. It allows the users to create an account and adding it to the database." wrappingWidth="185.86328125" AnchorPane.bottomAnchor="174.1552734375" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="74.13671875" AnchorPane.topAnchor="173.9716796875">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#eb0f0f" fontSmoothingType="LCD" layoutX="40.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chatting App: Registration" underline="true" wrappingWidth="131.138671875" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="78.861328125" AnchorPane.topAnchor="103.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
